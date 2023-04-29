@@ -1,4 +1,9 @@
 /* Estilos para el cuerpo de la página */
+.logo {
+	height: 50px;
+	width: 60px;
+  }
+  
 body {
 	font-family: Arial, sans-serif;
 	background-color: #f2f2f2;
@@ -29,14 +34,60 @@ body {
 	margin-bottom: 20px;
 	text-shadow: 2px 2px 5px #000;
   }
-  
-  
-/* Estilos para la cabecera */
-header {
-	background-color: #fff;
-	padding: 20px;
-	box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
+  #quienes-somos {
+	margin-top: 70px;
+  }
+
+  #quienes-somos {
+    padding-top: 80px;
 }
+
+  
+/* Estilos para el encabezado */
+.navbar-brand {
+	height: 50px;
+  }
+  
+  .navbar-toggler-icon {
+	border: none;
+  }
+  
+  .nav-link {
+	font-weight: bold;
+	color: #fff;
+  }
+  
+  .navbar {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	background-color: #000000;
+  }
+  
+  .navbar .navbar-collapse {
+	background-color: #b32323;
+  }
+  
+  .navbar .navbar-nav .nav-item .nav-link:hover {
+	color: #f2f2f2;
+  }
+  
+  .logo {
+	width: 55px;
+	height: 50px;
+  }
+  
+  /* Estilos para las secciones */
+  section {
+	padding: 50px 0;
+  }
+  
+  h2 {
+	font-size: 2.5rem;
+	margin-bottom: 30px;
+  }
 
 /* Estilos para el título de la página */
 h1 {
@@ -81,81 +132,117 @@ h1 {
 
 /* Estilos para el pie de página */
 footer {
-	background-color: #4a37ee;
-	padding: 20px;
-	color: #000000;
-	text-align: center;
+	background-color: #252935;
+	color: #fff;
+	padding: 50px 0;
+  }
+  
+  footer h4 {
+	margin-bottom: 20px;
+  }
+  
+  footer p {
+	font-size: 16px;
+	line-height: 24px;
+  }
+  
+  footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  footer li {
+	display: inline-block;
+	margin-right: 20px;
+  }
+  
+  footer a {
+	color: #fff;
+	font-size: 24px;
+  }
+  
+ .social-icons {
+  display: flex;
+  align-items: center;
 }
 
-.redes-sociales {
-	list-style: none;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.social-icons a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.social-icons a:hover {
+  color: #5c5c5c;
+}
+
+.social-icons i {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .social-icons i {
+    font-size: 20px;
   }
-  
-  .redes-sociales li {
-	margin: 0 10px;
-  }
-  
-  .redes-sociales img {
-	width: 30px;
-	height: 30px;
-  }
-  .logo {
-	width: 100px; 
-	height: auto;
-  }
-  #seccion4 {
-	background-color: #f26969;
+}
+
+#seccion4 {
+	background-color: #ff8080;
 	padding: 50px;
-  }
-  
-  #seccion4 h2 {
+}
+
+#seccion4 h2 {
 	text-align: center;
 	font-size: 36px;
 	margin-bottom: 30px;
-  }
-  
-  #contactanos {
-	background-color: #f7f7f7;
+	color: white;
+	text-shadow: 2px 2px 2px #333;
+}
+
+#contactanos {
+	background-color: #f2f2f2;
 	padding: 50px;
-  }
-  
-  #contactanos h2 {
+}
+
+#contactanos h2 {
 	text-align: center;
 	font-size: 32px;
 	margin-bottom: 30px;
-  }
-  
-  #contact-form {
+	color: #333;
+}
+
+#contact-form {
 	display: flex;
 	flex-direction: column;
 	max-width: 600px;
 	margin: 0 auto;
-  }
-  
-  .form-group {
+}
+
+.form-group {
 	margin-bottom: 20px;
-  }
-  
-  .form-group label {
+}
+
+.form-group label {
 	display: block;
 	margin-bottom: 5px;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="tel"],
-  textarea {
-	border: 1px solid #ccc;
+	color: #000000;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+	border: 1px solid #c98989;
 	padding: 10px;
 	width: 100%;
 	font-size: 16px;
-  }
-  
-  button[type="submit"] {
-	background-color: #0066cc;
+	color: #333;
+}
+
+button[type="submit"] {
+	background-color: #ff3366;
 	color: #fff;
 	border: none;
 	padding: 10px 20px;
@@ -163,11 +250,29 @@ footer {
 	cursor: pointer;
 	transition: background-color 0.3s ease;
 	margin-top: 20px;
-  }
-  
-  button[type="submit"]:hover {
-	background-color: #004c99;
-  }  
+}
+
+button[type="submit"]:hover {
+	background-color: #e6005c;
+}
+
+/* Agregamos un estilo para los mensajes de éxito o error */
+#status-message {
+	padding: 10px;
+	margin-top: 20px;
+	font-size: 16px;
+	color: white;
+	border-radius: 5px;
+}
+
+#status-message.success {
+	background-color: #4caf50;
+}
+
+#status-message.error {
+	background-color: #f44336;
+}
+
   /* Estilos para la sección 2 */
 
 #seccion2 {
@@ -205,76 +310,96 @@ footer {
 	padding: 20px;
   }
 /* Estilos para la sección 3 */
-#seccion3 {
-	background-color: #ffebeb;
+#productos {
+	background-color: #F9F9F9;
 	padding: 50px;
 	text-align: center;
-  }
-  
-  #seccion3 h2 {
+	}
+	
+	#productos h2 {
 	font-size: 36px;
 	font-weight: bold;
 	margin-bottom: 30px;
-  }
-  
-  #seccion3 p {
-	font-size: 18px;
-  }
-  
-  #seccion3 .card {
+	}
+	
+	#productos .container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	}
+	
+	#productos .card {
 	border: none;
 	margin-bottom: 30px;
 	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 	transition: 0.3s;
-  }
-  
-  #seccion3 .card:hover {
+	flex-basis: calc(33.33% - 20px);
+	}
+	
+	#productos .card:hover {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-  
-  #seccion3 .card-img-top {
-	height: 200px;
+	}
+	
+	#productos .card-img-top {
+	width: 100%;
+	height: auto;
 	object-fit: cover;
-  }
-  
-  #seccion3 .card-title {
+	object-position: center;
+	}
+	
+	#productos .card-body {
+	padding: 20px;
+	}
+	
+	#productos .card-title {
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 10px;
-  }
-  
-  #seccion3 .card-text {
+	}
+	
+	#productos .card-text {
 	font-size: 16px;
-	text-align: left;
-  }
+	text-align: justify;
+	}
+	
+	@media (max-width: 768px) {
+	#productos .card {
+	flex-basis: 100%;
+	margin-right: 0;
+	}
+	}
 
-  .testimonios {
-	background-color: #f56565;
-	padding: 60px 0;
-  }
-  
-  .testimonio {
-	background-color: #f2abab;
-	padding: 20px;
-	border-radius: 10px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	margin-bottom: 30px;
-  }
-  
-  .testimonio img {
-	border-radius: 50%;
-	width: 150px;
-	height: 120px;
-	margin-right: 20px;
-  }
-  
-  .testimonio .nombre {
-	font-weight: bold;
-	margin-bottom: 10px;
-  }
-  
-  .testimonio .contenido {
-	font-size: 1.2em;
-	font-family: Arial, sans-serif;
-  }
-  
+	.testimonios {
+		background-color: #f8f8f8;
+		padding: 80px 0;
+		}
+		
+		.testimonio {
+		background-color: #ffffff;
+		padding: 40px;
+		border-radius: 20px;
+		box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+		margin-bottom: 50px;
+		}
+		
+		.testimonio img {
+		border-radius: 50%;
+		width: 110px;
+		height: 100px;
+		margin-right: 30px;
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		}
+		
+		.testimonio .nombre {
+		font-size: 1.2em;
+		font-weight: bold;
+		margin-bottom: 20px;
+		color: #3e3e3e;
+		}
+		
+		.testimonio .contenido {
+		font-size: 1.1em;
+		line-height: 1.5em;
+		font-family: "Open Sans", sans-serif;
+		color: #5e5e5e;
+		}
