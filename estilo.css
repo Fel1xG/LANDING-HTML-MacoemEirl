@@ -47,37 +47,79 @@ body {
 /* Estilos para el encabezado */
 .navbar-brand {
 	height: 50px;
-  }
-  
-  .navbar-toggler-icon {
+}
+
+.navbar-toggler-icon {
 	border: none;
-  }
-  
-  .nav-link {
+}
+
+.nav-link {
 	font-weight: bold;
 	color: #fff;
-  }
-  
-  .navbar {
+}
+
+.navbar {
 	position: fixed;
 	top: 0;
 	width: 100%;
 	z-index: 9999;
 	background-color: #000000;
-  }
-  
-  .navbar .navbar-collapse {
+}
+
+.navbar .navbar-collapse {
 	background-color: #b32323;
-  }
-  
-  .navbar .navbar-nav .nav-item .nav-link:hover {
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
 	color: #f2f2f2;
-  }
-  
-  .logo {
+}
+
+.logo {
 	width: 55px;
 	height: 50px;
-  }
+}
+
+.header {
+	background-color: red;
+}
+
+/* Estilos adicionales */
+.navbar-collapse.show {
+	background-color: #b32323;
+}
+
+@media (max-width: 991.98px) {
+	.navbar-expand-md .navbar-collapse {
+		position: fixed;
+		top: 56px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #b32323;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		overflow-y: auto;
+	}
+	
+	.navbar-collapse.collapsing {
+		position: absolute;
+		top: 56px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #b32323;
+	}
+	
+	.navbar-collapse.collapsing .navbar-nav {
+		flex-direction: column;
+	}
+	
+	.navbar-collapse.collapsing .navbar-nav .nav-link {
+		padding: 10px 0;
+		border-bottom: 1px solid rgba(255,255,255,0.2);
+	}
+}
+
   
   /* Estilos para las secciones */
   section {
