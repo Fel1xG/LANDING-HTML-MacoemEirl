@@ -55,7 +55,7 @@ body {
 
 .nav-link {
 	font-weight: bold;
-	color: #fff;
+	color: #000;
 }
 
 .navbar {
@@ -63,15 +63,15 @@ body {
 	top: 0;
 	width: 100%;
 	z-index: 9999;
-	background-color: #000000;
+	background-color: #fff;
 }
 
 .navbar .navbar-collapse {
-	background-color: #b32323;
+	background-color: #fff;
 }
 
 .navbar .navbar-nav .nav-item .nav-link:hover {
-	color: #f2f2f2;
+	color: #b32323;
 }
 
 .logo {
@@ -80,46 +80,40 @@ body {
 }
 
 .header {
-	background-color: red;
+	background-color: #b32323;
+	color: #fff;
+	padding: 20px 0;
+}
+
+.header h1 {
+	margin: 0;
+	font-size: 2rem;
+	font-weight: bold;
+	text-align: center;
 }
 
 /* Estilos adicionales */
 .navbar-collapse.show {
-	background-color: #b32323;
+	background-color: #fff;
 }
 
-@media (max-width: 991.98px) {
-	.navbar-expand-md .navbar-collapse {
-		position: fixed;
-		top: 56px;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: #b32323;
-		padding-top: 15px;
-		padding-bottom: 15px;
-		overflow-y: auto;
-	}
-	
-	.navbar-collapse.collapsing {
-		position: absolute;
-		top: 56px;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: #b32323;
-	}
-	
-	.navbar-collapse.collapsing .navbar-nav {
-		flex-direction: column;
-	}
-	
-	.navbar-collapse.collapsing .navbar-nav .nav-link {
-		padding: 10px 0;
-		border-bottom: 1px solid rgba(255,255,255,0.2);
-	}
+.dropdown-menu {
+    left: -50px;
 }
 
+.dropdown-menu a {
+  display: flex;
+  align-items: center;
+  color: #333;
+}
+
+.dropdown-menu i {
+  margin-right: 10px;
+}
+
+.dropdown-menu a:hover {
+  color: #b32323;
+}
   
   /* Estilos para las secciones */
   section {
@@ -276,7 +270,7 @@ input[type="text"],
 input[type="email"],
 input[type="tel"],
 textarea {
-	border: 1px solid #c98989;
+	border: 1px solid #ee2525;
 	padding: 10px;
 	width: 100%;
 	font-size: 16px;
@@ -284,7 +278,7 @@ textarea {
 }
 
 button[type="submit"] {
-	background-color: #ff3366;
+	background-color: #ee2525;
 	color: #fff;
 	border: none;
 	padding: 10px 20px;
@@ -295,7 +289,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-	background-color: #e6005c;
+	background-color: #e61818;
 }
 
 /* Agregamos un estilo para los mensajes de éxito o error */
